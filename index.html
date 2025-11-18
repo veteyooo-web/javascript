@@ -17,7 +17,25 @@
         let randomBodyAnimal =randomBodyAnimals[Math.floor(Math.random() *2)]
         let randomInsult = "У  тебя " + randomBodyPart + " еще  более " + randomAdjective + " , чем " + randomBodyAnimal + " у " + randomWord;
         randomInsult;
-        document.write(randomInsult);
+        document.write(randomInsult + "<br><br>");
+        let part = randomBodyPart;
+        let adj = randomAdjective;
+        let word = randomWord;
+        let animalPart = randomBodyAnimal;
+        let insultParts = [
+            "у",
+            "тебя",
+             ,
+            "еще",
+            "более",
+            adj + ",",
+            "чем",
+            animalPart,
+            "у",
+            word
+        ];
+        let insult = insultParts.join(" ");
+        document.write(insult);
     </script>
 </body>
 </html>
